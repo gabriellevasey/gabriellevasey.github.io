@@ -186,10 +186,12 @@ input, select, textarea {
   }
   
   .popup {
+	overflow-y: auto;
 	margin: 15em auto;
 	padding: 20px;
 	background: #fff;
 	width: 60%;
+	max-height: 65%;
 	position: relative;
 	transition: all 5s ease-in-out;
   }
@@ -259,10 +261,18 @@ input, select, textarea {
 		line-height: 2em;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h3, h4, h5, h6 {
 		font-family: 'Merriweather', serif;
 		font-weight: 700;
 		text-transform: uppercase;
+		color: #6b7770;
+		margin: 0 0 0.5em 0;
+		line-height: 1.2;
+	}
+
+	h2 {
+		font-family: 'Merriweather', serif;
+		font-weight: 700;
 		color: #6b7770;
 		margin: 0 0 0.5em 0;
 		line-height: 1.2;
@@ -297,8 +307,11 @@ input, select, textarea {
 				padding: 0 1.25em 0 1.25em;
 			}
 
-	h3, h4 {
-		font-size: 1.25em;
+	h3 {
+		
+		color:  #30465b;
+		font-size: 1.5em;
+
 	}
 
 	a {
@@ -3091,6 +3104,12 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+  .popup {
+	width: 100%;
+	max-height: 85%;
+	height: 90%;
+	margin: 10% 0 5% 0;
+  }
 
 			body, input, textarea, select {
 				font-size: 11pt;
